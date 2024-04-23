@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'jvm-test-suite'
+}
+
+group = 'systems.linckode'
+version = '1.0-SNAPSHOT'
+description = 'Java implementation of the FourQ curve.'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compileOnly 'org.jetbrains:annotations:24.1.0'
+
+}
+
+testing {
+    suites {
+        test {
+            useJUnitJupiter()
+        }
+    }
+}
+
+
